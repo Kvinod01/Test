@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="music.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body{
+    background-color:antiquewhite
+}
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+nav
+{
+
+    
+font-family: 'Ubuntu', sans-serif;
+position: sticky;
+top: 0px;
+
+}
+
+    nav ul{
+      
+
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        height: 65px;
+        background-color: black;
+        color: white;
+     
+        
+    }
+    nav ul li{
+        padding: 0 10px;
+    }
+
+   .brand img{
+    height:50px;
+    padding:0 5px;
+}
+.brand{
+display: flex;
+align-items: center;
+font-weight: bolder;
+font-size: 1.1rem;
+}
+.container
+{
+    font-family: 'Ubuntu', sans-serif;
+    height: 145vh;
+   background-image: url('v3.jpg');
+    display: flex;
+ margin:10px auto;
+ padding: 10px;
+ width: 150vh;
+ border-radius: 10px;
+ color: white;
+background-size: 155vh 165vh;
+flex-direction: column;
+
+
+
+   
+}
+.songItemContainer
+{
+    margin-top: 50px;
+}
+.bottom
+{
+    position: sticky;
+    bottom: 0px;
+    background-color: black;
+    height: 100px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+
+}
+#myProgressBar
+{
+    width: 80vw; 
+    cursor: pointer;
+}
+.icons{
+    margin-top: 14px; 
+    color: rgb(241, 241, 247);
+}
+.icons i{
+    cursor: pointer;
+    transition:opacity 0.1s
+}
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    font-family: 'Varela Round', sans-serif;
+   
+}
+.songItem
+{
+    display: flex;
+    background-color: white;
+    color: black;
+   height: 60px;
+   align-items: center;
+   margin: 15px 0;
+   justify-content: space-between;
+   border-radius: 34px;
+   width: 70vh;
+  
+}
+.songItem img{
+    width: 50px;
+    margin: 0 23px;
+    border-radius: 30px;
+
+
+}
+.timestamp{
+    margin: 0 23px;
+}
+
+.timestamp i{
+    cursor: pointer;
+    transition:opacity 0.1s
+}
+
+
+.songInfo img{
+    opacity: 0;
+   transition:opacity 0.8s ease-in;
+   
+}
+.songItemPlay{
+    margin: 0 23px;
+
+    
+}
+.songItemPlay {
+    cursor: pointer;
+
+}
+
+    </style>
+</head>
+<body>
+ 
+    <nav>
+        <ul>
+      <li class="brand"><img src="spotify.png" alt="spotify">Spotify</li>
+       <li>Home</a></li>
+      <li>About</li>
+        </ul>
+
+        
+    </nav>
+    
+
+    
+    <div class="container"> 
+        <h1>Hey Spotify..</h1>
+     <div class="songItemContainer">
+        <div class="songItem">
+            <img alt="1">
+            <span class="songName">Let me Love You</span>
+            <span class="songlistplay"><span class="timestamp">05:56</span> <i id="0" class="far songItemPlay fa-play-circle" ></i> </span></span>
+      
+        </div>
+        <div class="songItem">
+            <img alt="1">
+            <span class="songName">Let me Love You</span>
+            <span class="songlistplay"><span class="timestamp">05:07</span> <i id="1" class="far songItemPlay fa-play-circle"></i> </span></span>
+        </div>
+        <div class="songItem">
+            <img alt="1">
+            <span class="songName">Let me Love You</span>
+            <span class="songlistplay"><span class="timestamp">05:09</span></span> <i id="2" class="far songItemPlay fa-play-circle"></i> </span></span>
+        </div>
+        <div class="songItem">
+            <img alt="1">
+            <span class="songName">Let me Love You</span>
+            <span class="songlistplay"><span class="timestamp">05:09</span> <i id="3" class="far songItemPlay fa-play-circle"></i> </span></span>
+        </div>
+      
+        <div class="songItem">
+            <img alt="1">
+            <span class="songName">Let me Love You</span>
+            <span class="songlistplay"><span class="timestamp">05:09</span> <i id="4" class="far songItemPlay fa-play-circle"></i> </span></span>
+        </div>
+        <div class="songItem">
+            <img alt="1">
+            <span class="songName">Let me Love You</span>
+            <span class="songlistplay"><span class="timestamp">05:09</span> <i id="5" class="far songItemPlay fa-play-circle"></i> </span></span>
+        </div>
+    </div>
+    <div class="songItem">
+        <img alt="1">
+        <span class="songName">Let me Love You</span>
+        <span class="songlistplay"><span class="timestamp">05:56</span> <i id="6" class="far songItemPlay fa-play-circle" ></i> </span></span>
+    </div>
+    <div class="songItem">
+        <img alt="1">
+        <span class="songName">Let me Love You</span>
+        <span class="songlistplay"><span class="timestamp">05:56</span> <i id="7" class="far songItemPlay fa-play-circle" ></i> </span></span>
+    </div>
+    <div class="songItem">
+        <img alt="1">
+        <span class="songName">Let me Love You</span>
+        <span class="songlistplay"><span class="timestamp">05:56</span> <i id="8" class="far songItemPlay fa-play-circle" ></i> </span></span>
+    </div>
+    </div>
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+        <div class="icons">
+            <!-- fontawesome icons -->
+            <i class="fa fa-2x fa-fast-backward" aria-hidden="true" id="fastBackward"></i>
+         
+
+            <i class="fas fa-2x fa-step-backward" id="previous"></i>
+            <i class="far fa-2x fa-play-circle" id="masterPlay"></i>
+            <i class="fas fa-2x fa-step-forward" id="next"></i>
+            <i class="fa fa-2x fa-fast-forward" aria-hidden="true" id="fastForward"></i>
+           
+        </div>
+
+        <div class="songInfo">
+            <img src="playing.gif" width="40px" alt="playing" id="gif"><span><span id="masterSongName"></span></span>
+       
+        </div>
+
+        </div>
+        <script src="music.js"></script>
+<script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
+</body>
+</html>
