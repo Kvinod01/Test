@@ -24,7 +24,7 @@ songItems.forEach((element,i)=>{
 element.getElementsByClassName("timestamp")[0].innerText=songs[i].duration;
 })
 
-//hundle play pause
+//handle play pause
 masterPlay.addEventListener('click',()=>{
 if(audioElement.paused || audioElement.currentTime<=0)
 {
